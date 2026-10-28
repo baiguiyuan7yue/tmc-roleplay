@@ -1,0 +1,11 @@
+{
+  "name": "@local/dsh-roleplay-preset",
+  "version": "1.4.0",
+  "private": true,
+  "type": "module",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

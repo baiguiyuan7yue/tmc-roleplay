@@ -1,0 +1,14 @@
+# TMC-RP —— Tiered Multi-Channel Long-Term Memory（RP 分支）
+#
+# 宿主半：D/E/F/G 四区压缩流水线 + L5 重算 + /tmc/* 只读路由 + archived-sessions.log。
+# 预设半（roleplay / roleplay-web 预设里的 tmc 行）负责 L1/L2 与记忆工具、
+# 以及 L5/L1/自动回忆/检索指引的 required context 注入。
+#
+# 数据目录放 DSH home（跨工作区、跨会话稳定）；baseDir 必须与预设半的 tmc 行一致。
+- insert:
+    - id: tmc
+      name: tmc/index
+      config:
+        baseDir: !!js dshHomePath('tmc-memory')
+        readingDir: !!js dshHomePath('tmc-memory/reading')
+        utcOffset: 8

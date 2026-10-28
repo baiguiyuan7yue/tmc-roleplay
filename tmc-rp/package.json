@@ -1,0 +1,27 @@
+{
+  "name": "tmc",
+  "version": "0.5.1",
+  "private": true,
+  "type": "module",
+  "description": "Tiered Multi-Channel Long-Term Memory Plugin（RP 分支）：L1 每轮注入 + L2/L3→L4 自动回忆 + required context 穿透 complete 人设",
+  "license": "MIT",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./index": "./index.js",
+    "./index.js": "./index.js",
+    "./preset": "./preset.js",
+    "./preset.js": "./preset.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "scripts": {
+    "check": "node --check index.js && node --check preset.js && node --check lib/store.mjs && node --check lib/tiers.mjs && node --check lib/search.mjs && node --check lib/classify.mjs",
+    "test": "node --test test/zones.test.mjs"
+  }
+}
